@@ -1,20 +1,51 @@
-
-import LogoSectio from './components/footertop/FooterTop'
+import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import ErrorPage from "./pages/error/ErrorPage"
-import Footer from './components/footer/Footer'
-import Header from "./components/header/Header"
-import Slider from "./components/slider/Slider"
+import Home from './pages/home/Home'
+import Blog from "./container/blog/Blog"
+import Process from "./container/process/Process"
+import Resources from "./container/resources/Resources"
+import Services from "./container/services/Services"
+import Work from "./container/work/Work"
+
 
 function App() {
+
+  const route=createBrowserRouter(
+    [
+      {
+        path:"/",
+        element:<Home/>
+      },
+      {
+        path:"/blog",
+        element:<Blog/>
+      },
+      {
+        path:"/process",
+        element:<Process/>
+      },
+      {
+        path:"/resources",
+        element:<Resources/>
+      },
+      {
+        path:"/services",
+        element:<Services/>
+      },
+      {
+        path:"/work",
+        element:<Work/>
+      },
+      {
+        path:"#",
+        element:<ErrorPage/>
+      }
+    ]
+  )
  
   return (
     <>
-       <ErrorPage/>
-     <h1>Incognimous Dev</h1>
-     <LogoSectio/>
-     <Footer />
-     <Header/>
-     <Slider/>
+      <RouterProvider router={route}/>
     </>
   )
 }
