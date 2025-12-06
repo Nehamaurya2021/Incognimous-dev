@@ -1,6 +1,6 @@
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import ErrorPage from "./pages/error/ErrorPage"
-import Home from './pages/home/Home'
+import Home from './container/home/Home'
 import Blog from "./container/blog/Blog"
 import Process from "./container/process/Process"
 import Resources from "./container/resources/Resources"
@@ -9,7 +9,6 @@ import Work from "./container/work/Work"
 
 
 function App() {
-
   const route=createBrowserRouter(
     [
       {
@@ -37,7 +36,7 @@ function App() {
         element:<Work/>
       },
       {
-        path:"#",
+        path:" ",
         element:<ErrorPage/>
       }
     ]
