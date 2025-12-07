@@ -1,12 +1,13 @@
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-    <footer className="bg-[#053B74] text-white pt-20 pb-8">
+    <footer className="bg-[#053B74] text-white pt-20 pb-8 mt-32">
       
      
-      <div className="relative -mt-28 mb-16 flex justify-center">
-        <div className="bg-white text-black shadow-xl rounded-2xl w-[80%] p-10 flex justify-between items-center">
+      <div className="relative -mt-28 mb-16 flex justify-center ">
+        <div className="bg-white text-black shadow-2xl rounded-2xl w-[75%] p-10 flex justify-between items-center flex-wrap">
           <h2 className="text-3xl font-bold">Let's create the next together</h2>
           <button className="bg-[#053B74] text-white px-6 py-2 rounded-lg hover:bg-blue-700">
             CONTACT US
@@ -15,11 +16,11 @@ const Footer = () => {
       </div>
 
       
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
         
        
         <div>
-          <h1 className="text-xl font-bold mb-3"> Incognimous</h1>
+          <h1 className="text-xl font-bold mb-3 flex items-center gap-1.5"><img src="/Vector.png" alt="" />Incognimous</h1>
           <p className="text-gray-300">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
           </p>
@@ -28,9 +29,9 @@ const Footer = () => {
        
         <div>
           <h3 className="font-bold mb-3">CONTACT</h3>
-          <p className="text-gray-300"> +91 9876543210</p>
-          <p className="text-gray-300"> incognimous@gmail.com</p>
-          <p className="text-gray-300"> House No-1, Sector-4, City - XXXXX, Country</p>
+          <p className="text-gray-300 flex items-center gap-2"><img src="/Call.png" alt="" />+91 9876543210</p>
+          <p className="text-gray-300 flex items-center gap-2"><img src="/Vector (1).png" alt="" />incognimous@gmail.com</p>
+          <p className="text-gray-300 flex items-center gap-2"><img src="/Location on.png" alt="" />House No-1, Sector-4, City - XXXXX, Country</p>
         </div>
 
         
