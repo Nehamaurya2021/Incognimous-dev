@@ -12,7 +12,7 @@ dist
 dist-ssr
 
 # public if you don’t want to push assets
-/public
+# /public
 
 *.local
 
