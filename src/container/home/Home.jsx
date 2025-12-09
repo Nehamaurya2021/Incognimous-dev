@@ -38,13 +38,42 @@ const Home = () => {
         }
     }
 
+    // process
+    const steps = [
+        {
+            id: "1.",
+            title: "Discovery",
+            points: ["Idea", "Data Analysis", "UX Research"]
+        },
+        {
+            id: "2.",
+            title: "Design",
+            points: ["User Flow", "Wireframing", "UI Design", "Client Feedback"]
+        },
+        {
+            id: "3.",
+            title: "Development",
+            points: ["Coding", "DB Design", "Debugging"]
+        },
+        {
+            id: "4.",
+            title: "Testing",
+            points: ["Usability Testing", "Load Testing", "Device Testing"]
+        },
+        {
+            id: "5.",
+            title: "Deployment",
+            points: ["Release"]
+        }
+    ]
+
     return (
         <>
             <Header />
             <Slider />
             <LogoSection />
 
-    {/*<======================+++ Experience section +++=========================>*/}
+            {/*<======================+++ Experience section +++=========================>*/}
             <section className="text-center pt-25 pb-5">
                 <div className="">
                     <h2 className="text-4xl font-bold md:mx-110 leading-snug tracking-normal">We have Experience, That Matter’s a lot! </h2>
@@ -73,7 +102,7 @@ const Home = () => {
                 </div>
             </section>
 
-    {/*<======================+++ Latest Project section +++=========================>*/}
+            {/*<======================+++ Latest Project section +++=========================>*/}
 
             <section className="w-full max-w-6xl mx-auto px-4 py-12">
                 {/* Header */}
@@ -111,7 +140,7 @@ const Home = () => {
                 </div>
             </section>
 
-     {/*<======================+++ Our Sevices section +++=========================>*/}
+            {/*<======================+++ Our Sevices section +++=========================>*/}
 
             <section className="w-full max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-2xl md:text-4xl font-bold">Our Services</h2>
@@ -134,7 +163,76 @@ const Home = () => {
                 {RenderPage()}
             </section>
 
-    {/*<======================+++ Blog section +++=========================>*/}
+            {/*<======================+++ Process section +++=========================>*/}
+
+            <section className="text-center w-full max-w-6xl mx-auto px-4 py-12">
+
+                <h2 className="text-2xl md:text-4xl font-bold">
+                    Process that makes<br />work efficient
+                </h2>
+
+                <p className="mt-3 text-gray-500">
+                    United by the team, concert on risk factors to reduce the symptomus
+                </p>
+
+
+                {/* MOBILE VERTICAL */}
+                <div className="block md:hidden mt-12">
+                    <div className="flex flex-col gap-10 items-start pl-6 border-l-2 border-gray-300">
+
+                        {steps.map((step, i) => (
+                            <div key={i} className="relative pl-6">
+
+                                <span className="w-3 h-3 rounded-full bg-blue-500 absolute -left-1 top-1"></span>
+
+                                <h3 className="text-gray-400 text-2xl font-bold">
+                                    {step.id}
+                                </h3>
+
+                                <h4 className="font-semibold text-lg mt-2">
+                                    {step.title}
+                                </h4>
+
+                                <ul className="mt-1 space-y-1 text-gray-600">
+                                    {step.points.map((p) => <li key={p}>{p}</li>)}
+                                </ul>
+
+                            </div>
+                        ))}
+
+                    </div>
+                </div>
+
+
+                {/*  DESKTOP / TABLET HORIZONTAL */}
+                <div className="hidden md:block relative mt-14">
+
+                    <div className="absolute top-3 left-0 right-0 border border-gray-200"></div>
+
+                    <div className="flex justify-between">
+                        {steps.map((step, i) => (
+                            <div key={i} className="flex flex-col items-center">
+                                <div className="w-4 h-4 rounded-full border-2 border-blue-500 bg-white z-10"></div>
+
+                                <h3 className="text-gray-400 text-2xl font-bold mt-8">
+                                    {step.id}
+                                </h3>
+
+                                <h4 className="font-semibold text-lg mt-1">
+                                    {step.title}
+                                </h4>
+
+                                <ul className="mt-2 space-y-1 text-gray-600">
+                                    {step.points.map((p) => <li key={p}>{p}</li>)}
+                                </ul>
+
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+            </section>
+            {/*<======================+++ Blog section +++=========================>*/}
 
             <section className="w-full px-6 md:px-16 lg:px-24 py-10">
 
@@ -156,7 +254,7 @@ const Home = () => {
                 </div>
             </section>
 
-   {/*<======================+++ video section +++=========================>*/}
+            {/*<======================+++ video section +++=========================>*/}
 
             <section className="w-full px-6 md:px-16 lg:px-24 py-12">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-10">
