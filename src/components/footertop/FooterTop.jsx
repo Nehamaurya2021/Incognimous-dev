@@ -1,9 +1,9 @@
 
 const logos = [
-  { id: 1, src: "/public/log1.png", alt: "Logo 1" },
-  { id: 2, src: "/public/log2.png", alt: "Logo2" },
-  { id: 3, src: "/public/log3.png", alt: "Logo3" },
-  { id: 4, src: "/public/log4.png", alt: "Logo4" },
+  { id: 1, src: "/log1.png", alt: "Logo 1" },
+  { id: 2, src: "/log2.png", alt: "Logo2" },
+  { id: 3, src: "/log3.png", alt: "Logo3" },
+  { id: 4, src: "/log4.png", alt: "Logo4" },
 ];
 
 const LogoSection = () => {

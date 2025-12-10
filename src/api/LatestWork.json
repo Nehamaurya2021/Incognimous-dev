@@ -1,0 +1,22 @@
+[
+  {
+    "img": "/Images/project_img1.jpg",
+    "title": "Heading",
+    "category": "Service Category"
+  },
+  {
+    "img": "/Images/project_img2.jpg",
+    "title": "Heading",
+    "category": "Service Category"
+  },
+  {
+    "img": "/Images/project_img3.jpg",
+    "title": "Heading",
+    "category": "Service Category"
+  },
+  {
+    "img": "/Images/project_img4.jpg",
+    "title": "Heading",
+    "category": "Service Category"
+  }
+]
