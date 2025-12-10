@@ -8,8 +8,8 @@ const logos = [
 
 const LogoSection = () => {
   return (
-    <div className="w-full py-10 bg-white border border-gray-300">
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center">
+    <div className="w-full py-10 bg-white border-gray-200 ">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center py-2.5">
         {logos.map((item) => (
           <img
             key={item.id}
