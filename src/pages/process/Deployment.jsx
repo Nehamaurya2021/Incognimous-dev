@@ -16,7 +16,7 @@ const DeploymentSection = () => {
             
         </div> 
         <div className="py-5" >
-  <img className=" w-full  object-cover h-[600px] rounded-3xl " src="/pro2.png" alt="" />
+  <img className=" w-full  object-cover h-[600px] rounded-3xl " src="/pro.png" alt="" />
 </div>
       </div>
 
