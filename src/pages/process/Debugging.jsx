@@ -14,7 +14,7 @@ const DebuggingSection = () => {
             
         </div> 
         <div className="py-5" >
-  <img className=" w-full  object-cover h-[600px] rounded-3xl " src="/pro2.png" alt="" />
+  <img className=" w-full  object-cover h-[600px] rounded-3xl " src="/pro4.png" alt="" />
 </div>
       </div>
 

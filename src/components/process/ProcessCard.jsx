@@ -1,4 +1,4 @@
-const FeatureCard = (props) => {
+const ProcessCard = (props) => {
   return (
     // <div className="space-y-2">
     //       <p>{props.data.para}</p>
@@ -14,4 +14,4 @@ const FeatureCard = (props) => {
   );
 };
 
-export default FeatureCard;
+export default ProcessCard;
