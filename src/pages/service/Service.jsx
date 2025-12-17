@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import ServiceCard from "../../components/common/ServiceCard"
 import serviceWorkdata from "../../api/ServiceCardData.json"
 import Design from "./Design"
@@ -12,9 +11,9 @@ const Service = () => {
     <>
     {/*---------- work card----------- */}
   
-      <div className='py-20 px-5 sm:px-10 md:px-20 lg:px-[200px]'>
+      <div className='py-15 px-5 sm:px-10 md:px-20 lg:px-[10%]'>
         <h2 className=' font-bold text-3xl sm:text-[32px] lg:text-[40px]'>How We Work?</h2> 
-        <div className='flex justify-between flex-wrap  py-7 '>
+        <div className='flex justify-between text-justify flex-wrap  py-7 '>
             {serviceWorkdata.map((data)=>(
                 <ServiceCard  key={data.id} data={data}/>
             ))}
@@ -22,38 +21,30 @@ const Service = () => {
         </div> 
       </div>
 
-      {/* -----design and development ----------- */}
        
-
-        {/* ----- Tabs + Content ----------- */}
-      <div className='py-10 px-5 sm:px-10 md:px-20 lg:px-[200px] '>
+         {/* ----- Tabs + Content ----------- */}
+      <div className='py-10 px-5 sm:px-10 md:px-20 lg:px-[10%] '>
 
         {/* TAB BUTTONS */}
         <div className='flex-row text-xl sm:flex justify-between items-center font-bold sm:text-2xl md:text-2xl lg:text-3xl'>
 
           <div>
-            <button 
-              onClick={() => setActiveTab("design")}
-              className={ activeTab === "design" ? "underline text-black" : "text-gray-600"}
-            >
+            <button  onClick={() => setActiveTab("design")}
+              className={ activeTab === "design" ? "underline text-black" : "text-gray-600"} >
               Design & Development
             </button>
           </div>
 
           <div>
-            <button 
-              onClick={() => setActiveTab("devops")}
-              className={activeTab === "devops" ? "underline text-black" : "text-gray-600"}
-            >
+            <button  onClick={() => setActiveTab("devops")}
+              className={activeTab === "devops" ? "underline text-black" : "text-gray-600"}>
               DevOps
             </button>
           </div>
 
           <div>
-            <button 
-              onClick={() => setActiveTab("cyber")}
-              className={activeTab === "cyber" ? "underline text-black" : "text-gray-600"}
-            >
+            <button onClick={() => setActiveTab("cyber")}
+             className={activeTab === "cyber" ? "underline text-black" : "text-gray-600"}>
               Cyber Security
             </button>
           </div>
@@ -68,6 +59,8 @@ const Service = () => {
         </div>
 
       </div>
+
+      
     </>
   )
 }

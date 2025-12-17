@@ -6,6 +6,7 @@ import Process from "./container/process/Process"
 import Resources from "./container/resources/Resources"
 import Services from "./container/services/Services"
 import Work from "./container/work/Work"
+import Contact from "./container/contact/Contact"
 
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
       {
         path:"/work",
         element:<Work/>
+      },
+      {
+        path:"/contact",
+        element:<Contact/>
       },
       {
         path:" ",
