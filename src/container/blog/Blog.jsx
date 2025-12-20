@@ -1,10 +1,14 @@
 import Header from "../../components/header/Header"
 import Footer from "../../components/footer/Footer"
+import BlogPage from "../../pages/blog/BlogPage"
+import AnyQuestionSection from"../../pages/blog/HelpsPage";
 const Blog=()=>{
     return(
         <>
           <Header/>
-          <h1>This is blog section.</h1>
+          <BlogPage/>
+          <AnyQuestionSection/>
+          <BlogPage/>
           <Footer/>
         </>
     )
