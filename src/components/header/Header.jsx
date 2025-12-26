@@ -18,7 +18,6 @@ const Header = () => {
                         <li className="hover:text-gray-700 cursor-pointer"><a href="/services">Services</a></li>
                         <li className="hover:text-gray-700 cursor-pointer"><a href="/work">Work</a></li>
                         <li className="hover:text-gray-700 cursor-pointer"><a href="/process">Process</a></li>
-                        <li className="hover:text-gray-700 cursor-pointer"><a href="/resources">Resources</a></li>
                         <li className="hover:text-gray-700 cursor-pointer"><a href="/blog">Blog</a></li>
                     </ul>
 
@@ -40,7 +39,6 @@ const Header = () => {
                             <li className="hover:text-gray-700 cursor-pointer"><a href="/services">Services</a></li>
                             <li className="hover:text-gray-700 cursor-pointer"><a href="/work">Work</a></li>
                             <li className="hover:text-gray-700 cursor-pointer"><a href="/process">Process</a></li>
-                            <li className="hover:text-gray-700 cursor-pointer"><a href="/resources">Resources</a></li>
                             <li className="hover:text-gray-700 cursor-pointer"><a href="/blog">Blog</a></li>
                         </ul>
 
