@@ -4,7 +4,7 @@ const Cyber = () => {
   return (
     <>
     <div >
-        <div className='pt-15 pb-10 lg:w-[70%]'> 
+        <div className='pt-10 pb-10 lg:w-[70%]'> 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique debitis ipsum velit at quisquam officia sed dignissimos, odio mollitia nam cupiditate minima voluptas dolores dicta minus error consequuntur voluptatibus rem accusamus? Magnam nobis ex illo, adipisci quibusdam et, dolor asperiores distinctio suscipit, vel culpa excepturi non maiores vero sapiente!</p>
             </div>
 

@@ -4,7 +4,7 @@ const Design = () => {
   return (
    <>
     <div >
-        <div className='pt-15 pb-10 lg:w-[70%]'> 
+        <div className='pt-10 pb-10 lg:w-[70%]'> 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, similique debitis ipsum velit at quisquam officia sed dignissimos, odio mollitia nam cupiditate minima voluptas dolores dicta minus error consequuntur voluptatibus rem accusamus? Magnam nobis ex illo, adipisci quibusdam et, dolor asperiores distinctio suscipit, vel culpa excepturi non maiores vero sapiente!</p>
             </div>
 
@@ -90,7 +90,7 @@ const Design = () => {
                     </div>
                 </div>
 
-                <div className='sm:-mt-100  lg:-mt-90'>
+                <div className='sm:-mt-100  lg:-mt-60'>
                     <h2 className='py-4 text-xl lg:text-2xl font-medium'>App development</h2>
                     <p className='text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id animi dolorem provident asperiores corporis in facere quasi libero magnam neque nemo quia minima ab corrupti</p>
                     <p className='py-2 text-lg lg:text-xl '>Native Apps</p>
